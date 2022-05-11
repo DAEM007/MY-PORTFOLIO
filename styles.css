@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* NAV BAR STYLES */
+
+.nav-bar{
+    position: fixed;
+    background: rgb(49, 44, 70);
+    width: 100%;
+    padding: 15px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-bar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.nav-bar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-bar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+/* HOME SECTION STYLES */
+
+.Home{
+    display: flex;
+    background: url(./IMAGES/IMG_20200301_114458-removebg-preview__2_-removebg-preview.png) no-repeat right;
+    background-color: gray;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.Home .max-width .Text-1{
+    font-size: 27px;
+}
+
+.Home .max-width .Text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -20px;
+}
+
+.Home .max-width .Text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
