@@ -7,4 +7,9 @@ $(document).ready(function(){
             $('.nav-bar').removeClass("sticky");
         }
     });
+
+    // MENU BAR TOGGLE STYLES
+    $('.menu-btn').click(function(){
+        $('.nav-bar .menu').toggleClass("active");
+    });
 });
