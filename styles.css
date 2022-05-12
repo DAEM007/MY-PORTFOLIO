@@ -17,10 +17,17 @@
 .nav-bar{
     position: fixed;
     /* background: rgb(49, 44, 70); */
-    width: 100%;
     padding: 30px 0;
+    width: 100%;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
 }
+
+.nav-bar.sticky{
+    background: rgb(49, 44, 70);
+    padding: 30px 0;
+}
+
 
 .nav-bar .max-width{
     display: flex;
@@ -36,6 +43,11 @@
 
 .nav-bar .logo a span{
     color: rgb(49, 44, 70);
+    transition: all 0.3s ease;
+}
+
+.nav-bar.sticky a span{
+    color: #fff;
 }
 
 .nav-bar .menu li{
@@ -53,6 +65,19 @@
 
 .nav-bar .menu li a:hover{
     color: rgb(49, 44, 70);
+    transition: all 0.3s ease;
+}
+
+.nav-bar.sticky .menu li a:hover{
+    color: gray ;
+}
+
+/* MENU BUTTON STYLES */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
 }
 
 /* HOME SECTION STYLES */
@@ -76,7 +101,7 @@
 }
 
 .Home .max-width .Text-2{
-    font-size: 75px;
+    font-size: 70px;
     font-weight: 600;
     margin-left: -20px;
 }
@@ -91,3 +116,4 @@
     font-weight: 500;
 }
 
+/* RESPONSIVE STYLES HERE */
