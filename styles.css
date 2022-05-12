@@ -85,7 +85,9 @@
 .Home{
     display: flex;
     background: url(./IMAGES/IMG_20200301_114458-removebg-preview__2_-removebg-preview.png) no-repeat right;
-    background-color: gray;
+    /* background-color: gray; */
+    /* background-color: rgb(133, 114, 114); */
+    background-color: rgb(133, 133, 165);
     height: 100vh;
     color: #fff;
     min-height: 500px;
