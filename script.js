@@ -11,5 +11,6 @@ $(document).ready(function(){
     // MENU BAR TOGGLE STYLES
     $('.menu-btn').click(function(){
         $('.nav-bar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
     });
 });
