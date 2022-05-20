@@ -19,6 +19,7 @@
     /* background: rgb(49, 44, 70); */
     padding: 30px 0;
     width: 100%;
+    z-index: 999;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -81,7 +82,6 @@
 }
 
 /* HOME SECTION STYLES */
-
 .Home{
     display: flex;
     background: url(./IMAGES/IMG_20200301_114458-removebg-preview__2_-removebg-preview.png) no-repeat right;
@@ -93,35 +93,233 @@
 }
 
 .Home .max-width{
-    margin: auto 0 auto 40px;
+    margin: auto 0 auto 20px;
 }
 
-.Home .max-width .Text-1{
+.Home .Home-content .Text-1{
     font-size: 27px;
 }
 
-.Home .max-width .Text-2{
+.Home .Home-content .Text-2{
     font-size: 70px;
     font-weight: 600;
-    margin-left: -20px;
+    margin-left: -5px
 }
 
-.Home .max-width .Text-3{
+.Home .Home-content .Text-3{
     font-size: 40px;
     margin: 5px 0;
 }
 
-.Home .max-width .Text-3 span{
+.Home .Home-content .Text-3 span{
     color: rgb(49, 44, 70);
     font-weight: 500;
 }
 
+.Home .Home-content a{
+    display: inline-block;
+    font-size: 25px;
+    background-color: rgb(49, 44, 70);
+    color: #fff;
+    padding: 15px 35px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(49, 44, 70);
+    transition: all 0.3s ease;
+}
+
+.Home .Home-content a:hover{
+    color: rgb(49, 44, 70);
+    background: none;
+}
+
+/* ALL SIMILAR SECTION STYLES */
+section{
+    padding: 100px 0;
+}
+
+section .title{
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Ubuntu' sans-serif;
+}
+
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 4px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after{
+    position: absolute;
+    bottom: -12;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(133, 133, 165);
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* ABOUT SECTION STYLES */
+.About .Service{
+    font-family: 'Poppins', sans-serif;
+}
+
+.About .title::after{
+    content: "who I am";
+}
+
+.About .About-content,
+.Service .Serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.About .About-content .left{
+    width: 45%;
+}
+
+.About .About-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.About .About-content .right{
+    width: 55%;
+}
+
+.About .About-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.About .About-content .right .text span{
+    color: rgb(133, 133, 165);
+}
+
+.About .About-content .right .text p{
+    text-align: justify;
+}
+
+.About .About-content .right a{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(49, 44, 70);
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(49, 44, 70);
+    transition: all 0.3s ease;
+}
+
+.About .About-content .right a:hover{
+    color: rgb(49, 44, 70);
+    background: none;
+}
+
+
+/* SERVICE SECTION STYLES */
+.Service{
+    color: #fff;
+    background: rgb(133, 133, 165);
+}
+
+.Service .title::before{
+    background: #fff;
+}
+
+.Service .title::after{
+    color: #fff;
+    background: rgb(133, 133, 165);
+    content: "what I provide";
+}
+
+.Service .Serv-content .card{
+    width: calc(33% - 20px);
+    /* check the above out learn more about the calculations */
+    background: rgb(80, 71, 122);
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Service .Serv-content .card:hover{
+    background: rgb(49, 44, 70);
+}
+
+.Service .Serv-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.Service .Serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.Service .Serv-content .card i{
+    font-size: 25px;
+    color: #fff;
+}
+
+.Service .Serv-content .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 5px 0;
+}
+
+/* stopped at 55:00 contd later */
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVE STYLES HERE */
-@media (max-width: 950px){
+@media (max-width: 1300px){
+    .Home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px){
+    .About .About-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 947px){
     .max-width{
         padding: 0 50px;
     }
+}
 
+@media (max-width: 947px){
     .menu-btn{
         display: block;
         z-index: 999;
@@ -156,5 +354,67 @@
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+    }
+
+    .Home .Home-content .Text-2{
+        font-size: 50px;
+        margin-left: 0;
+    }
+    
+    .Home .Home-content .Text-3{
+        font-size: 35px;
+    }
+
+    .Home .Home-content a{
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+
+    .max-width{
+        max-width: 800px;
+    }
+
+    .About .About-content .column{
+        width: 100%;
+    }
+
+    .About .About-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .About .About-content .right{
+        flex: 100%;
+    }
+
+}
+
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 20px;
+    }
+
+    .Home .Home-content .Text-2{
+        font-size: 30px;
+    }
+    
+    .Home .Home-content .Text-3{
+        font-size: 20px;
+    }
+
+    .Home .Home-content a{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px){
+    .Home .Home-content .Text-2{
+        font-size: 20px;
+        margin-left: 0;
+    }
+    
+    .Home .Home-content .Text-3{
+        font-size: 10px;
     }
 }
