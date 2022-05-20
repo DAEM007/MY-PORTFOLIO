@@ -138,6 +138,19 @@ section{
     padding: 100px 0;
 }
 
+.About, .Service, .skills{
+    font-family: 'Poppins', sans-serif;
+}
+
+.About .About-content,
+.Service .Serv-content,
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 section .title{
     position: relative;
     font-size: 40px;
@@ -171,20 +184,14 @@ section .title::after{
 }
 
 /* ABOUT SECTION STYLES */
-.About .Service{
-    font-family: 'Poppins', sans-serif;
+.About{
+    background: rgb(189, 183, 218);
 }
 
 .About .title::after{
+    color: #111;
+    background: rgb(189, 183, 218);
     content: "who I am";
-}
-
-.About .About-content,
-.Service .Serv-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .About .About-content .left{
@@ -209,7 +216,7 @@ section .title::after{
 }
 
 .About .About-content .right .text span{
-    color: rgb(133, 133, 165);
+    background: #fff;
 }
 
 .About .About-content .right .text p{
@@ -285,7 +292,45 @@ section .title::after{
     margin: 10px 0 5px 0;
 }
 
-/* stopped at 55:00 contd later */
+/* SKILLS SECTION STYLES */
+.skills .title::after{
+    content: 'what I know';
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+}
+
+/* stopped at 1:05:00 contd later */
+
+
 
 
 
@@ -388,6 +433,10 @@ section .title::after{
         flex: 100%;
     }
 
+    .Service .Serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 690px){
@@ -406,6 +455,11 @@ section .title::after{
     .Home .Home-content a{
         font-size: 15px;
     }
+
+    .Service .Serv-content .card{
+        width: 100%;
+    }
+}
 }
 
 @media (max-width: 500px){
