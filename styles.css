@@ -12,8 +12,8 @@
     margin: auto;
 }
 
-/* NAV BAR STYLES */
 
+/* NAV BAR STYLES */
 .nav-bar{
     position: fixed;
     /* background: rgb(49, 44, 70); */
@@ -73,6 +73,7 @@
     color: gray ;
 }
 
+
 /* MENU BUTTON STYLES */
 .menu-btn{
     color: #fff;
@@ -80,6 +81,7 @@
     cursor: pointer;
     display: none;
 }
+
 
 /* HOME SECTION STYLES */
 .Home{
@@ -133,12 +135,13 @@
     background: none;
 }
 
+
 /* ALL SIMILAR SECTION STYLES */
 section{
     padding: 100px 0;
 }
 
-.About, .Service, .skills{
+.About, .Service, .skills, .testimonials{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -183,14 +186,11 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* ABOUT SECTION STYLES */
-.About{
-    background: rgb(189, 183, 218);
-}
 
+/* ABOUT SECTION STYLES */
 .About .title::after{
     color: #111;
-    background: rgb(189, 183, 218);
+    background: #fff;
     content: "who I am";
 }
 
@@ -216,7 +216,9 @@ section .title::after{
 }
 
 .About .About-content .right .text span{
-    background: #fff;
+    background: rgb(49, 44, 70);
+    padding: 5px;
+    color: #fff;
 }
 
 .About .About-content .right .text p{
@@ -243,15 +245,18 @@ section .title::after{
 
 
 /* SERVICE SECTION STYLES */
-.Service{
+.Service,
+.testimonials{
     color: #fff;
     background: rgb(133, 133, 165);
 }
 
-.Service .title::before{
+.Service .title::before,
+.testimonials .title::before{
     background: #fff;
 }
 
+.Service .title::after,
 .Service .title::after{
     color: #fff;
     background: rgb(133, 133, 165);
@@ -292,8 +297,10 @@ section .title::after{
     margin: 10px 0 5px 0;
 }
 
+
 /* SKILLS SECTION STYLES */
 .skills .title::after{
+    color: #111;
     content: 'what I know';
 }
 
@@ -307,12 +314,35 @@ section .title::after{
     margin-bottom: 10px;
 }
 
+.skills .skills-content .left p{
+    text-align: justify;
+}
+
+.skills .skills-content .left a{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(49, 44, 70);
+    color: #fff;
+    padding: 5px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(49, 44, 70);
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover{
+    color: rgb(49, 44, 70);
+    background: none;
+}
+
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
 
 .skills .skills-content .right .info{
     display: flex;
+    margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
@@ -326,15 +356,69 @@ section .title::after{
     height: 5px;
     width: 100%;
     background: lightgrey;
+    position: relative;
 }
 
-/* stopped at 1:05:00 contd later */
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(49, 44, 70);
+}
+
+.skills-content .right .html::before{
+    width: 90%;
+}
+
+.skills-content .right .css::before{
+    width: 75%;
+}
+
+.skills-content .right .bootstrap::before{
+    width: 60%;
+}
+
+.skills-content .right .js::before{
+    width: 70%;
+}
+
+.skills-content .right .wordpress::before{
+    width: 65%;
+}
 
 
+/* TESTIMONIALS SECTION STYLES */
+.testimonials .title::before{
+    background: #111;
+}
 
+.testimonials .title{
+    color: #111;
+}
 
+.testimonials .title::after{
+    color: #111;
+    background: rgb(133, 133, 165);
+    content: "Appraisals";
+}
 
+.testimonials .carousel .card{
+    background: rgb(80, 71, 122);
+    border-radius: 5px;
+    padding: 25px 35px;
+}
 
+.testimonials .carousel img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(49, 44, 70);
+}
+
+/* stopped at 1:16:00 contd later */
 
 
 
@@ -436,6 +520,11 @@ section .title::after{
     .Service .Serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
     }
 }
 
