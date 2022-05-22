@@ -408,17 +408,70 @@ section .title::after{
     background: rgb(80, 71, 122);
     border-radius: 5px;
     padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.testimonials .carousel .card:hover{
+    background: rgb(49, 44, 70);
+}
+
+.testimonials .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.testimonials .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.testimonials .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 .testimonials .carousel img{
-    height: 150px;
-    width:  150px;
+    height: 300px;
+    width:  300px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid rgb(49, 44, 70);
 }
 
+.testimonials .carousel .card:hover img{
+    border-color: #fff;
+}
 
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid rgb(49, 44, 70) !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot.active:hover{
+    background: rgb(49, 44, 70) !important;
+}
+
+/* stopped at 1:27:00 contd later */
 
 
 
