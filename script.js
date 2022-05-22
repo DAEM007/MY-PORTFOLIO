@@ -12,5 +12,6 @@ $(document).ready(function(){
     $('.menu-btn').click(function(){
         $('.nav-bar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
+        $('.nav-bar.sticky .menu li a:hover').toggleClass('color', 'purple')
     });
 });
