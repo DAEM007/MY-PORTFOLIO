@@ -141,13 +141,14 @@ section{
     padding: 100px 0;
 }
 
-.About, .Service, .skills, .testimonials{
+.About, .Service, .skills, .testimonials, .contact{
     font-family: 'Poppins', sans-serif;
 }
 
 .About .About-content,
 .Service .Serv-content,
-.skills .skills-content{
+.skills .skills-content,
+.contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -471,7 +472,75 @@ section .title::after{
     background: rgb(49, 44, 70) !important;
 }
 
-/* stopped at 1:27:00 contd later */
+
+/* CONTACT SECTION STYLES */
+.contact .title::after{
+    content: "get in touch";
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .column .left p{
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: rgb(49, 44, 70);
+}
+
+.contact .contact-content .info .head{
+    font-weight: 600;
+}
+
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+
+.contact .right form .fields{
+    display: flex;
+}
+
+.contact .right form .fields,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+}
+
+.contact .right form .field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 15px;
+    font-family: 'poppins', sans-serif;
+}
+
+/* stopped at 1:40:00 contd later */
 
 
 
