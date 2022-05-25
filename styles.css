@@ -716,7 +716,6 @@ section .title::after{
         width: 100%;
     }
 }
-}
 
 @media (max-width: 500px){
     .Home .Home-content .Text-2{
