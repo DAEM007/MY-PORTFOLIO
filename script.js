@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     // SLIDE-UP SCRIPT
     $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
+        $('html, body').animate({scrollTop: 0});
     });
 
     // MENU BAR TOGGLE SCRIPT
