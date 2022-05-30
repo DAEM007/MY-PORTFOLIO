@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -82,6 +86,29 @@
     display: none;
 }
 
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 40px;
+    background: rgb(49, 44, 70);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
 
 /* HOME SECTION STYLES */
 .Home{
@@ -141,7 +168,7 @@ section{
     padding: 100px 0;
 }
 
-.About, .Service, .skills, .testimonials, .contact{
+.About, .Service, .skills, .testimonials, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -583,9 +610,23 @@ section .title::after{
     color: rgb(49, 44, 70);
 }
 
-/* stopped at 1:45:00 contd later  */
+/* FOOTER SECTION STYLES */
+footer{
+    background: #111;
+    padding: 20px 25px;
+    color: #fff;
+}
 
+footer span a{
+    color: rgb(10, 10, 248);
+    text-decoration: none;
+}
 
+footer span a:hover{
+    text-decoration: underline;
+}
+
+/* stopped at 1:55:00 contd later */
 
 
 
