@@ -92,7 +92,7 @@ html{
     width: 40px;
     background: rgb(49, 44, 70);
     right: 30px;
-    bottom: 10px;
+    bottom: 30px;
     text-align: center;
     line-height: 45px;
     color: #fff;
@@ -100,6 +100,8 @@ html{
     font-size: 30px;
     border-radius: 5px;
     cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
     transition: all 0.3s ease;
 }
 
